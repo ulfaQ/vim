@@ -92,3 +92,5 @@ set ai
 " sets esc to remove previous search higlighting
 nnoremap <silent> <cr><esc> :noh<cr><esc>
 
+" set ^ to 0
+nnoremap 0 ^
