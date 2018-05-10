@@ -67,6 +67,9 @@ autocmd FileType python nnoremap <buffer> <F9> :exec '!python3' shellescape(@%, 
 " This sets line numbering
 set number
 
+" set default colorscheme
+colorscheme dark_eyes
+
 " This sets cursorline color (dont know what it is, but trying)
 set cursorline
 " highlight CursorLine ctermbg=LightBlue
@@ -82,6 +85,16 @@ nnoremap tj :tabprev<CR>
 nnoremap th :tabfirst<CR>
 nnoremap tl :tablast<CR>
 
+" split sceen navigation 
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+set splitbelow
+set splitright
+
+
 " end of nnoremaps ###
 set wildmenu
 set hlsearch
@@ -94,3 +107,4 @@ nnoremap <silent> <cr><esc> :noh<cr><esc>
 
 " set ^ to 0
 nnoremap 0 ^
+
